@@ -1,0 +1,28 @@
+/* 전체 선택자*/
+* {
+    font-size: 30px;
+}
+/* 타입(태그) 선택자*/
+span {
+    color: red;
+}
+/* id 선택자*/ /* id 선택자는 무조건 앞에 #이 붙음*/
+#sbject {
+    color: blue !important; /* !important는 무조건 한다는 뜻*/
+}
+/* class 선택자*/ /* class 선택자는 무조건 앞에 .이 붙음*/
+.content {
+    color: pink;
+}
+/* 같은 이름으로 적용하면 캐스캐이딩때문에 밑에꺼가 적용됨*/
+.content {
+    color: brown;
+}
+
+.info-ip {
+    color: red;
+}
+
+.font-8 {
+    font-size: 8px;
+}

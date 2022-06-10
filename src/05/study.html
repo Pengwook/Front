@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="username">아이디:</label>
+            <input type="text" id="username" value="junil" placeholder="아이디" readonly required>
+        </div>
+        <div>
+            <label for="password">비밀번호:</label>
+            <input type="password" id="password" placeholder="비밀번호" autofocus>
+        </div>
+        <div>
+            <input type="checkbox" id="chk1">
+            <label for="chk1">골프</label>
+        </div>
+        <div>
+            <input type="checkbox" id="chk2">
+            <label for="chk2">축구</label>
+        </div>
+        <div>
+            <input type="checkbox" id="chk3">
+            <label for="chk3">농구</label>
+        </div>
+        <div>
+            <input type="radio" id="r-chk1" name="hobby">
+            <label for="r-chk1">골프</label>
+        </div>
+        <div>
+            <input type="radio" id="r-chk2" name="hobby">
+            <label for="r-chk2">축구</label>
+        </div>
+        <div>
+            <input type="radio" id="r-chk3" name="hobby">
+            <label for="r-chk3">농구</label>
+        </div>
+        <div>
+            <input type="radio" id="r2-chk1" name="hobby2">
+            <label for="r2-chk1">골프2</label>
+        </div>
+        <div>
+            <input type="radio" id="r2-chk2" name="hobby2">
+            <label for="r2-chk2">축구2</label>
+        </div>
+        <div>
+            <input type="radio" id="r2-chk3" name="hobby2">
+            <label for="r2-chk3">농구2</label>
+        </div>
+
+        <div>
+            <label for="num">수량:</label>
+            <input type="number" id="num" min="0" max="100" step="5">
+        </div>
+        <div>
+            <label for="volume">볼륨:</label>
+            <input type="range" id="volume" min="0" max="100" step="1">
+            <label class="value"></label>
+        </div>
+        <div>
+            <label for="">첨부파일:</label>
+            <input type="file">
+        </div>
+        <div>
+            <input type="hidden" name="v" value="숨겨진 값">
+            <input type="hidden" name="flag" value="1">
+        </div>
+
+        <div>
+            <label for="info">자기소개</label>
+            <textarea name="" id="info" cols="30" rows="10"></textarea>
+        </div>
+        <pre></pre>
+        <input type="date">
+
+        <div>
+            <label for="select">선택: </label>
+            <select name="" id="select">
+                <optgroup label="의류">
+                    <option value="상의">상의</option>
+                    <option value="하의" selected>하의</option>
+                    <option value="신발">신발</option>
+                </optgroup>
+               <optgroup label="악세사리">
+                   <option value="가방">가방</option>
+                   <option value="목걸이">목걸이</option>
+               </optgroup>
+            </select>
+        </div>
+        <div>
+            <input type="text" list="list1">
+            <datalist id="list1">
+                <option value="김준일">김준일</option>
+                <option value="한대경">한대경</option>
+                <option value="이승수">이승수</option>
+            </datalist>
+        </div>
+        <div>
+            <input type="submit" value="전송1">
+            <input type="button" name="" id="">
+            <button type="submit">전송2</button>
+            <button type="button">버튼</button>
+        </div>
+    </form>
+    <script>
+        const _volume = document.querySelector("#volume");
+        const _value = document.querySelector(".value");
+
+        _volume.onchange = () => {
+            _value.textContent = _volume.value;
+        }
+    </script>
+</body>
+</html>
