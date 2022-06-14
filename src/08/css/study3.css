@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+  
+#container {
+    margin: 0px auto;
+    width: 1100px;
+    background-color: #dadada;
+}  
+
+aside {
+    position: fixed;
+    right: 10px;
+    top: 18%;
+    width: 150px;
+    height: 600px;
+    background-color: pink;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* 서로 사이의 간격이 일정하게 됨 */
+    align-items: center;
+
+    padding: 0px 50px;
+    height: 200px;
+    background-color: #faf83d;
+}
+
+nav ul {    /* nav태그안에 들어있는 모든 ul들 */
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-around; /* between -> 좌우 일정 제일 첫번째와 끝번째를 양쪽에 빠짝*/
+    align-items: center;            /* around -> 그냥 일정하게 좌우간격 띄움*/
+
+    width: 500px;
+}
+
+main {
+    height: 1000px;
+    background-color: #f83d3d;
+}
+
+footer {
+    height: 400px;
+    background-color: #141414;
+}
