@@ -17,7 +17,7 @@
 }
 
 ul {
-    list-style: none;
+    list-style-type: none;
 }
 
 a { /* 하이퍼 링크 */
@@ -30,5 +30,5 @@ input, textarea {
 }
 
 table {
-    border-collapse: collapse; /*  */
+    border-collapse: collapse; 
 }
