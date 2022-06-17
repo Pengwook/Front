@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+
+    <script>
+        const box1 = document.getElementById("box"); 
+        const boxs = document.getElementsByClassName("box");
+        const boxTags = document.getElementsByTagName("div");
+
+        console.log(box1);
+        console.log(boxs);
+        console.log(boxTags);
+
+        const box2 = document.querySelector("#box");
+        const boxs2 = document.querySelectorAll(".box");
+        const boxTags2 = document.querySelectorAll("div")
+
+        console.log(box2);
+        console.log(boxs2);
+        console.log(boxTags2);
+
+        console.log(box2.textContent);  /* 안에 들어있는 텍스트노드를 들고오는것 */
+        console.log(boxs2[0].textContent);  /* 0번째 텍스트값 */
+        console.log(boxs2[1].textContent);
+
+        box2.textContent = "김준일"; /* 원하는값 넣는법 */
+    </script>
+</body>
+</html>

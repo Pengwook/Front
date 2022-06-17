@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            /* width: 200px, height: 200px bg-color: black  */ /* 버튼 누르면 200px들 400px로 */
+            width: 200px;
+            height: 200px;
+
+            background-color: black;
+        }   
+
+        .box2 {
+            /* width: 200px; height: 200px; bg-color: pink; */ /* 버튼 누르면 bg-color를 blue로 */
+            width: 200px;
+            height: 200px;
+
+            background-color: pink;
+        }
+
+        .box-resize {
+            width: 400px;
+            height: 400px;
+        }
+
+        .box-bg-change {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1 box-resize"></div>
+    <div class="box2 box-bg-change"></div>
+    <button type="button" class="btn1">크기 변경</button>
+    <button type="button" class="btn2">색상 변경</button>
+
+    <script src="js/event2.js"></script>
+</body>
+</html>
