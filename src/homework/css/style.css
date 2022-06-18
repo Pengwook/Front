@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR&display=swap');
+
+* {
+    /* text */
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #141414;
+
+    /* box */
+    box-sizing: border-box;
+
+    /* computed */
+    margin: 0px;
+    padding: 0px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a { /* 하이퍼 링크 */
+    color: #141414;
+    text-decoration: none;  /* 밑줄 없애는거 */
+}
