@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" src="aaaaa">1</div>      
+    
+    <script>
+        const box1 = document.querySelector("#box");    /* 인라인을 바꾸는것. 위 div쪽 style(비어있음)을 바꾸는거임, 그래서 클릭을 두번해야지만 바꿔지는것 */
+        console.log(box1.style.backgroundColor);
+        box1.onclick = () => {
+            if(box1.style.backgroundColor == "black" || box1.style.backgroundColor == ""){  // 이렇게 바꾸면 클릭 한번으로도 바뀜
+                box1.style.backgroundColor = "red";
+            }else{
+                box1.style.backgroundColor = "black"
+            }
+        }
+    </script>
+</body>
+</html>
