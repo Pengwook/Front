@@ -24,6 +24,10 @@ header {
     border-bottom: 1px solid var(--main-color);
 }
 
+.brand-logo-border {
+    cursor: pointer;
+}
+
 nav {   /* html의 nav부분 이미지 2개를 정렬 시킨것 */
     display: flex;
     justify-content: space-between;
@@ -69,6 +73,8 @@ nav img {
 
     width: 110px;
     height: 59px;
+
+    cursor: pointer;
 }
 
 .article-header-left span {
@@ -82,6 +88,8 @@ nav img {
 
     width: 64px;
     height: 60px;
+
+    cursor: pointer;
 }
 
 .article-body {
@@ -162,6 +170,8 @@ pre {
     color: white;
 
     background-color: #21dc6d;
+
+    cursor: pointer;
 }
 
 .section-container {
@@ -239,6 +249,8 @@ pre {
     overflow: hidden;   /* 이 영역을 벗어나게 되면은 숨겨라 */
 
     background-color: white;
+
+    cursor: pointer;
 }
 
 footer {
