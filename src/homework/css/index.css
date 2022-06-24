@@ -14,6 +14,8 @@
 }
 
 /* header 부분*/
+
+
 .header-all {
     display: flex;
     justify-content: space-between;
@@ -29,6 +31,7 @@
 
 }
 
+
 #input-url {
     border-radius: 5px;
     padding: 0px 12px;
@@ -43,6 +46,14 @@
     top: 4px; 
 }
 
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 14px;
+}
+
 .span-all {
     display: flex;
     justify-content: space-around;
@@ -54,10 +65,12 @@
     color: white;
 }
 
-nav {
+.button-all {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
 }
+
 
 /* main 부분 */
 
@@ -84,8 +97,114 @@ nav {
     color: #0969da;
 }
 
+.owner-header {
+    display: flex;
+    font-size: 14px;
+    color: #24292f;
+}
 
+.owner-label {
+    margin: 0px 0px 6px;
+}
 
+.input-label {
+    margin: 0px 0px 6px;
+}
+
+#owner-box {
+    padding: 5px 16px;
+
+    color: #24292f;
+    background-color: #f6f8fa;
+}
+
+#name-box {
+    margin: 0px 5px 0px 0px;
+    padding: 5px 12px;
+
+    background-color: #f6f8fa;
+}
+
+.name-suggestion {
+    margin: 8px 0px;
+
+    font-size: 14px;
+    color: #24292f;
+
+}
+
+#discription-input {
+    margin: 0px 5px 0px 0px;
+    padding: 5px 12px;
+
+    background-color: #f6f8fa;
+}
+
+.checkbox-all {
+    margin: 15px 0;
+    vertical-align: middle;
+}
+
+.checkbox-public {
+    font-size: 14px;
+    color: #24292f;
+}
+
+.checkbox-private {
+    font-size: 14px;
+    color: #24292f;
+}
+
+.p-1 {
+    font-size: 12px;
+    color: #727a82;
+}
+
+.repository-option {
+    margin-top: 10px;
+}
+
+.init {
+    font-size: 14px;
+    color: #24292f;
+}
+
+.skip {
+    font-size: 14px;
+    color: #727a82;
+}
+
+.checkbox-add {
+    margin-top: 10px;
+}
+
+#choose-box {
+    border-radius: 5px;
+}
+
+.license {
+    margin-top: 10px;
+}
+
+.p-2 {
+    color: #5a6167;
+}
+
+.mark {
+    margin-top: 10px;
+}
+
+.create-btn button{
+    
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px 16px;
+    background-color: #94d3a2;
+
+    font-size: 14px;
+    color: #ffffffcc;
+
+}
 
 
 /* 하단부분 */
@@ -125,7 +244,9 @@ nav {
     justify-content: space-between;
 }
 
-#footer .f_bottom .info_mn li {}
+#footer .f_bottom .info_mn li {
+
+}
 
 #footer .f_bottom .info_mn a {
     font-size: 13px;
